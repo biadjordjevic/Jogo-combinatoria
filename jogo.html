@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="jogo.css">
+  <title>Jogo da Sequência</title>
+</head>
+<body>
+  <div class="container">
+  <h1 class="titulo">🔢 Jogo da Sequência Secreta</h1>
+    <div class="content-container">
+  <p>Monte a sequência correta de <strong>3 números</strong> (0 a 9)</p>
+
+  <div class="teclado-container">
+  <div id="teclado"></div>
+  </div>
+  <p id="palpite"></p>
+
+  <div class="btn-container">
+  <button onclick="enviarPalpite()">Enviar</button>
+  <button onclick="limparPalpite()">Limpar</button>
+  <button onclick="mostrarDica()">Mostrar Dica (Soma)</button>
+  <button id="dica2" onclick="mostrarDica2()" disabled>Mostrar Dica 2 (Primeiro Número)</button>
+  <button onclick="revelarResposta()">Revelar Resposta</button>
+
+  <p id="mensagem"></p>
+</div>
+</div>
+  </div>
+  <script src="jogo.js"></script>
+</body>
+</html>

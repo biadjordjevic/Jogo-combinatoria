@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(214, 214, 214);
+}
+
+.container{
+    margin-top: 200px;
+}
+
+.btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+} 
+
+.teclado-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+#teclado{
+    max-width:75px;
+}
