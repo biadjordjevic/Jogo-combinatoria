@@ -7,27 +7,29 @@
   <title>Jogo da Sequência</title>
 </head>
 <body>
+ 
   <div class="container">
-  <h1 class="titulo">🔢 Jogo da Sequência Secreta</h1>
-    <div class="content-container">
-  <p>Monte a sequência correta de <strong>3 números</strong> (0 a 9)</p>
-
-  <div class="teclado-container">
-  <div id="teclado"></div>
+    <h1 class="titulo"> Jogo da Sequência Secreta</h1>
+      <div class="content-container">
+    <p class="descricao">Monte a sequência correta de <strong>3 números</strong> (0 a 9)</p>
+  
+    <div class="teclado-container">
+    <div id="teclado"></div>
+    </div>
+    <p id="palpite"></p>
+  
+    <div class="btn-container">
+    <button class = "btn" onclick="enviarTentativa()">Enviar</button>
+    <button class = "btn" onclick="limparTentativa()">Limpar</button>
+    <button class = "btn" onclick="mostrarDica()">Mostrar Dica (Soma)</button>
+    <button class = "btn"  id="dica2" onclick="mostrarDica2()" disabled>Mostrar Dica 2 (Primeiro Número)</button>
+    <button class = "btn" onclick="revelarResposta()">Revelar Resposta</button>
   </div>
-  <p id="palpite"></p>
-
-  <div class="btn-container">
-  <button onclick="enviarPalpite()">Enviar</button>
-  <button onclick="limparPalpite()">Limpar</button>
-  <button onclick="mostrarDica()">Mostrar Dica (Soma)</button>
-  <button id="dica2" onclick="mostrarDica2()" disabled>Mostrar Dica 2 (Primeiro Número)</button>
-  <button onclick="revelarResposta()">Revelar Resposta</button>
-
+  </div>
   <p id="mensagem"></p>
+  <p id="pontuacao">Pontuação: 0</p>
 </div>
-</div>
-  </div>
+  
   <script src="jogo.js"></script>
 </body>
 </html>
